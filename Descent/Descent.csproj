@@ -67,8 +67,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\DataReaders\Json\ReadSettings.cs" />
+    <Compile Include="Core\GameEngine\Ai\DescisionRules.cs" />
+    <Compile Include="Core\GameEngine\Ai\SurgeUsage.cs" />
     <Compile Include="Core\GameEngine\Fighting\AttackAction.cs" />
     <Compile Include="Core\GameEngine\Random\RandomDice.cs" />
+    <Compile Include="Core\GameEngine\Trackers\TurnTracker.cs" />
     <Compile Include="Core\Settings\ApplicationSettings.cs" />
     <Compile Include="Core\Settings\ConstantSettings.cs" />
     <Compile Include="MainWindow.xaml.cs">
