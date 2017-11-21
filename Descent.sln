@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descent", "Descent\Descent.csproj", "{E1328BFB-1AB8-4856-B11E-524AD38201A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{70F4BC4F-90FF-4D98-A086-52FD3C2018A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descent.Api", "Descent.Api\Descent.Api.csproj", "{7F5E37B4-D683-4EAF-AEA3-7DFD1BA9F2B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E1328BFB-1AB8-4856-B11E-524AD38201A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1328BFB-1AB8-4856-B11E-524AD38201A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1328BFB-1AB8-4856-B11E-524AD38201A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F4BC4F-90FF-4D98-A086-52FD3C2018A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F4BC4F-90FF-4D98-A086-52FD3C2018A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F4BC4F-90FF-4D98-A086-52FD3C2018A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F4BC4F-90FF-4D98-A086-52FD3C2018A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5E37B4-D683-4EAF-AEA3-7DFD1BA9F2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5E37B4-D683-4EAF-AEA3-7DFD1BA9F2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5E37B4-D683-4EAF-AEA3-7DFD1BA9F2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5E37B4-D683-4EAF-AEA3-7DFD1BA9F2B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
