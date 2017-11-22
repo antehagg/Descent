@@ -2,8 +2,8 @@
 {
     public class EquipType
     {
-        public int Id;
-        public EquipTypeName Type;
+        public int Id { get; set; }
+        public EquipTypeName Type { get; set; }
     }
 
     public enum EquipTypeName { OneHanded, TwoHanded, Armor, Other }

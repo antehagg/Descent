@@ -7,13 +7,9 @@ using DataLib.Characters.HeroData;
 
 namespace DataLib.Characters
 {
-    public class Hero : ICharacter
+    public class Hero : Character
     {
-        public int Id;
-        public string Name;
-        public Archetype Archetype;
-        public Characteristics Characteristics;
-        public Attributes Attributes;
-        public Inventory Inventory;
+        public Archetype Archetype { get; set; }
+        public Attributes Attributes { get; set; }
     }
 }

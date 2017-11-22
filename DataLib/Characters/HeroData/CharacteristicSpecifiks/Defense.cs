@@ -7,8 +7,9 @@ using DataLib.Dices;
 
 namespace DataLib.Characters.HeroData.CharacteristicSpecifiks
 {
-    public class Defense : Characteristic
+    public class Defense
     {
-        public List<Dice> Dices;
+        public int Id { get; set; }
+        public List<Dice> Dices { get; set; }
     }
 }

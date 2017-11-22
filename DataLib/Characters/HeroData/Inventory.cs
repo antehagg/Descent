@@ -9,8 +9,9 @@ namespace DataLib.Characters.HeroData
 {
     public class Inventory
     {
-        public int Gold;
-        public List<Item> Items;
-        public EquipedItems EquipedItems;
+        public int Id { get; set; }
+        public int Gold { get; set; }
+        public List<Item> Items { get; set; }
+        public EquipedItems EquipedItems { get; set; }
     }
 }

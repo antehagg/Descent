@@ -8,7 +8,9 @@ namespace DataLib.Players
 {
     public class Player
     {
-        public string Name;
-        public bool Ai;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool Ai { get; set; }
+        public List<PlayingHero> PlayedHeroes { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿{
-  "StartingGold": 100, 
+  "StartingGold": 100,
   "MaxHeroes": 4,
+  "MaxPlayers":  5, 
   "ActionCount": 2
 }

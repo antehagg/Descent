@@ -34,11 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +67,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\GameContext.cs" />
+    <Compile Include="Gui\Editor\AbilityCreation.xaml.cs">
+      <DependentUpon>AbilityCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Editor\ConditionCreation.xaml.cs">
+      <DependentUpon>ConditionCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\GameCreation\PlayerPick.xaml.cs">
+      <DependentUpon>PlayerPick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\CoreTests\GameEngineTests\AiTests\SurgeUsageTests.cs" />
+    <Page Include="Gui\Editor\AbilityCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gui\Editor\ConditionCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gui\GameCreation\PlayerPick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,7 +101,6 @@
     <Compile Include="Core\DataReaders\Json\ReadSettings.cs" />
     <Compile Include="Core\GameEngine\Ai\DescisionRules.cs" />
     <Compile Include="Core\GameEngine\Ai\SurgeUsage.cs" />
-    <Compile Include="Core\GameEngine\Fighting\AttackAction.cs" />
     <Compile Include="Core\GameEngine\Random\RandomDice.cs" />
     <Compile Include="Core\GameEngine\Trackers\TurnTracker.cs" />
     <Compile Include="Core\Settings\ApplicationSettings.cs" />
@@ -107,7 +138,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLib\DataLib.csproj">
@@ -115,6 +148,8 @@
       <Name>DataLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Core\GameEngine\Fighting\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

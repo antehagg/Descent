@@ -8,16 +8,10 @@ namespace DataLib.Characters.HeroData
 {
     public class Attributes
     {
-        public Attribute Might;
-        public Attribute Knowledge;
-        public Attribute Willpower;
-        public Attribute Awareness;
-    }
-
-    public class Attribute
-    {
-        public int Id;
-        public string Name;
-        public int Value;
+        public int Id { get; set; }
+        public int Might { get; set; }
+        public int Knowledge { get; set; }
+        public int Willpower { get; set; }
+        public int Awareness { get; set; }
     }
 }

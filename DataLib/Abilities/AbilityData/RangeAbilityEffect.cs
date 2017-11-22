@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataLib.Abilities.AbilityData
 {
-    public class RangeAbilityEffect : IAbilityEffect
+    public class RangeAbilityEffect : AbilityEffect
     {
-        public int AddedRange;
+        public int AddedRange { get; set; }
     }
 }

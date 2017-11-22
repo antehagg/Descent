@@ -10,7 +10,7 @@ namespace DataLib.Items
 {
     public class Weapon : Item
     {
-        public AttackType AttackType;
-        public List<Dice> AttackDice;
+        public AttackType AttackType { get; set; }
+        public List<Dice> AttackDice { get; set; }
     }
 }

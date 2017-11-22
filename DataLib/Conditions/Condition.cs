@@ -8,8 +8,8 @@ namespace DataLib.Conditions
 {
     public class Condition
     {
-        public int Id;
-        public string Name;
-        public string Description;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

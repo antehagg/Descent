@@ -8,11 +8,12 @@ namespace DataLib.Dices.DiceData
 {
     public class DiceSide
     {
-        public int Miss;
-        public int Hearth;
-        public int Surge;
-        public int Value;
-        public int Shield;
+        public int Id { get; set; }
+        public int Miss { get; set; }
+        public int Hearth { get; set; }
+        public int Surge { get; set; }
+        public int Value { get; set; }
+        public int Shield { get; set; }
 
         public void Add(DiceSide ds)
         {

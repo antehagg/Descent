@@ -9,17 +9,11 @@ namespace DataLib.Characters.HeroData
 {
     public class Characteristics
     {
-        public Health Health;
-        public Characteristic Speed;
-        public Stamina Stamina;
-        public Defense Defense;
-    }
-
-    public class Characteristic
-    {
-        public int Id;
-        public string Name;
-        public int Value;
+        public int Id { get; set; }
+        public int Health { get; set; }
+        public int Speed { get; set; }
+        public int Stamina { get; set; }
+        public Defense Defense { get; set; }
     }
 }
 

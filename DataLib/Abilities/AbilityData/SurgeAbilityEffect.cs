@@ -7,12 +7,12 @@ using DataLib.Conditions;
 
 namespace DataLib.Abilities.AbilityData
 {
-    public class SurgeAbilityEffect : IAbilityEffect
+    public class SurgeAbilityEffect : AbilityEffect
     {
-        public int SurgeCost;
-        public int Damage;
-        public int Range;
-        public Condition Condition;
-        public bool CanSpendSurgeForFatigue;
+        public int SurgeCost { get; set; }
+        public int Damage { get; set; }
+        public int Range { get; set; }
+        public Condition Condition { get; set; }
+        public bool CanSpendSurgeForFatigue { get; set; }
     }
 }

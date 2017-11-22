@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataLib.Abilities.AbilityData
 {
-    public class MovementAbilityEffect : IAbilityEffect
+    public class MovementAbilityEffect : AbilityEffect
     {
-        public int MovementEffectRestriction;
+        public int MovementEffectRestriction { get; set; }
     }
 }

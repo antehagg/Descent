@@ -12,5 +12,6 @@ namespace Descent.Core.Settings
         public int StartingGold;
         public int ActionCount;
         public int MaxHeroes;
+        public int MaxPlayers;
     }
 }

@@ -8,8 +8,9 @@ namespace DataLib.Characters.MonsterData
 {
     public class MonsterGroup
     {
-        public int Heroes;
-        public int Minions;
-        public int Masters;
+        public int Id { get; set; }
+        public int Heroes { get; set; }
+        public int Minions { get; set; }
+        public int Masters { get; set; }
     }
 }

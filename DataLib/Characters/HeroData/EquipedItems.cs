@@ -10,11 +10,12 @@ namespace DataLib.Characters.HeroData
 {
     public class EquipedItems
     {
-        public Item Armor;
-        public Item MainHand;
-        public Item OffHand;
-        public Item FirstOther;
-        public Item SecondOther;
+        public int Id { get; set; }
+        public Item Armor { get; set; }
+        public Item MainHand { get; set; }
+        public Item OffHand { get; set; }
+        public Item FirstOther { get; set; }
+        public Item SecondOther { get; set; }
 
         public void EquipArmor(Item armor)
         {
