@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Descent"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="1150" Width="1825">
     <Grid>
-        <Frame x:Name="FrameMain" Content="Frame" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517"/>
-
+        <StackPanel x:Name="MenuStackPanel" HorizontalAlignment="Left" Height="39" Margin="0,0,-3,0" VerticalAlignment="Top" Width="1820" Orientation="Horizontal" />
+        <Frame x:Name="FrameMain" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Bottom" Width="1820" Margin="0,18,0,0"/>
     </Grid>
 </Window>

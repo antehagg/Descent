@@ -46,9 +46,26 @@ namespace Descent.Gui.Editor
             }
         }
 
+        private void ShowInfo()
+        {
+            if (ConditionListBox.SelectedItems.Count > 0)
+            {
+                if (!(ConditionListBox.SelectedItems[0] is Condition condition))
+                    return;
+
+                SelectedNameTextBlock.Text = condition.Name;
+                SelectedDescriptionTextBlock.Text = condition.Description;
+            }
+        }
+
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             CreateCondition();
+        }
+
+        private void InfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            ShowInfo();
         }
     }
 }

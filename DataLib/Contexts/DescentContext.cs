@@ -44,10 +44,19 @@ namespace DataLib.Contexts
         public DbSet<EquipType> EquipTypes { get; set; }
         public DbSet<ItemTrait> ItemTraits { get; set; }
 
+        public AbilityContext AbilityContext;
+
         public DescentContext() : base("DescentEntities")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<DescentContext>());
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DescentContext>());
+
+            CreateContexts();
+        }
+
+        private void CreateContexts()
+        {
+            AbilityContext = new AbilityContext(this);
         }
     }
 }

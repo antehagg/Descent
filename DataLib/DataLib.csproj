@@ -66,6 +66,7 @@
     <Compile Include="Characters\ICharacter.cs" />
     <Compile Include="Characters\Monster.cs" />
     <Compile Include="Characters\MonsterData\MonsterGroup.cs" />
+    <Compile Include="Contexts\AbilityContext.cs" />
     <Compile Include="Contexts\DescentContext.cs" />
     <Compile Include="Dices\Dice.cs" />
     <Compile Include="Dices\DiceData\DiceSide.cs" />

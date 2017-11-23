@@ -80,6 +80,7 @@
     <Compile Include="Gui\GameCreation\PlayerPick.xaml.cs">
       <DependentUpon>PlayerPick.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gui\GameState\State.cs" />
     <Compile Include="Tests\CoreTests\GameEngineTests\AiTests\SurgeUsageTests.cs" />
     <Page Include="Gui\Editor\AbilityCreation.xaml">
       <SubType>Designer</SubType>
