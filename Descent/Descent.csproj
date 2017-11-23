@@ -71,6 +71,9 @@
     <Compile Include="Gui\Editor\AbilityCreation.xaml.cs">
       <DependentUpon>AbilityCreation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gui\Editor\AbilityEffectsCreation.xaml.cs">
+      <DependentUpon>AbilityEffectsCreation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gui\Editor\ConditionCreation.xaml.cs">
       <DependentUpon>ConditionCreation.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
     </Compile>
     <Compile Include="Tests\CoreTests\GameEngineTests\AiTests\SurgeUsageTests.cs" />
     <Page Include="Gui\Editor\AbilityCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gui\Editor\AbilityEffectsCreation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

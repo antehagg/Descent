@@ -22,7 +22,7 @@ namespace Descent.Gui.Editor
 
         private ObservableCollection<Condition> GetConditions()
         {
-            using (var conditionContext = new ConditionContext())
+            using (var conditionContext = new DescentContext())
             {
                 return new ObservableCollection<Condition>(conditionContext.Conditions.Select(c => c).ToList());
             }
@@ -30,7 +30,7 @@ namespace Descent.Gui.Editor
 
         private void CreateCondition()
         {
-            using (var conditionContext = new ConditionContext())
+            using (var conditionContext = new DescentContext())
             {
                 var condition = new Condition
                 {

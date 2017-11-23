@@ -8,7 +8,13 @@ namespace DataLib.Abilities.AbilityData
 {
     public class AbilityEffect
     {
+        public AbilityEffect()
+        {
+            Abilities = new HashSet<Ability>();
+        }
+
         public int Id { get; set; }
-        public List<Ability> Abilities { get; set; }
+        public string Name { get; set; }
+        public ICollection<Ability> Abilities { get; set; }
     }
 }

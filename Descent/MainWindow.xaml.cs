@@ -15,14 +15,12 @@ namespace Descent
     {
         private readonly RandomDice _diceRoller;
 
-        private GameContext _gc;
-
         public MainWindow()
         {
             _diceRoller = new RandomDice();
             InitializeComponent();
             
-            FrameMain.Content = new ConditionCreation();
+            FrameMain.Content = new AbilityCreation();
         }
     }
 }
